@@ -1,6 +1,6 @@
 @ClinicaOdontologicaBackEnd_HostAddress = http://localhost:5222
 
-GET {{ClinicaOdontologicaBackEnd_HostAddress}}/weatherforecast/
+GET {{ClinicaOdontologicaBackEnd_HostAddress}}/pacientes
 Accept: application/json
 
 ###

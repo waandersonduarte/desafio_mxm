@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using ClinicaOdontologicaBackEnd.Domain.Enums;
 
 namespace ClinicaOdontologicaBackEnd.Domain.Dtos.Paciente;
 
@@ -8,7 +9,7 @@ public class PacienteCreateDto
     public string Nome { get; set; }
     [Required]
     public string Cpf { get; set; }
-    public string Sexo { get; set; }
+    public GeneroPaciente Sexo { get; set; } = GeneroPaciente.MASCULINO;
     public string DataNascimento { get; set; }
     [Required]
     public string Telefone { get; set; }
