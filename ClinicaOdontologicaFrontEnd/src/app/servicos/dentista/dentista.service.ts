@@ -9,7 +9,7 @@ import { Dentista } from '../../modelos/Dentista';
 export class DentistaService {
 
   //URL
-  private url:string = 'http://localhost:5222/dentistas/';
+  private url:string = 'http://localhost:5222/dentistas';
 
   constructor(private http:HttpClient) { }
 
