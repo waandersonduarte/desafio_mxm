@@ -9,7 +9,7 @@ public class PacienteCreateDto
     public string Nome { get; set; }
     [Required]
     public string Cpf { get; set; }
-    public GeneroPaciente Sexo { get; set; } = GeneroPaciente.MASCULINO;
+    public string Sexo { get; set; }
     public string DataNascimento { get; set; }
     [Required]
     public string Telefone { get; set; }

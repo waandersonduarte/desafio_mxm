@@ -23,39 +23,41 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap" rel="stylesheet">
     <link rel="icon" href="{% static 'imagem/logo_titulo.ico' %}">
-    <title>{% block titulo %}{% endblock titulo %} | OrtoEndo</title>
+    <title></title>
 </head>
 
 <body>
-    <!-- {% include 'partials/_nav.html' %} -->
-
-    <!-- {% include 'partials/_messages.html' %} -->
     <div class="main-content main-content-list container">
-        <!-- <form method="GET" action="#">
-            <label for="dentista">Selecione o dentista:</label>
-            <select name="dentista" id="dentista">
-                <option value="">TODOS</option>
-                {% for dentista in dentistas %}
-                <option value=""></option>
-                {% endfor %}
-            </select>
-            <button type="submit">Filtrar</button>
-        </form> -->
-
-        <!-- {% if consultas %} -->
-        <h2>Registrar Paciente</h2>
-        <!-- {% endif %} -->
-        <!-- {% comment %} <button class="botao-qtd">{{ consultas.count }}</button> {% endcomment %} -->
         <a routerLink="registrar/">
             <button class="botao-cadastrar"><i class="fa fa-plus"></i></button>
         </a>
-        <!-- {% for consulta in consultas %}
-        {% include 'consulta/partials/consultas.html' %}
-        {% empty %} -->
-        <div class="center m-y">
-            <h1>Nenhum paciente registrado.</h1>
+        <div class="app app-list-item" *ngFor="let paciente of pacientes">
+            <div class="app-data">
+                <div class="last-name">
+                    <h3>{{paciente.nome}}</h3>
+                </div>
+                CPF: {{paciente.cpf}}<br>
+                Sexo: {{paciente.sexo}}<br>
+                Data de Nascimento: {{paciente.dataNascimento}}<br>
+                Telefone: {{paciente.telefone}}<br>
+                Endereço: {{paciente.endereco}}<br>
+            </div>
+            <footer class="footer">
+                <!-- <div class="coluna">
+                    <a href="{% url 'paciente:historico' pk=paciente.id %}">
+                        <i class="fa fa-info-circle">Informações</i>
+                    </a>
+                </div> -->
+                <!-- <div class="coluna">
+                    <a href="{% url 'paciente:atualizar' pk=paciente.id %}">
+                        <i class="fa fa-edit">Editar</i>
+                    </a>
+                </div> -->
+                <div class="coluna">
+                    <i class="fa fa-trash" (click)="remover(paciente.id || 0)">Excluir</i>
+                </div>
+            </footer>
         </div>
-        <!-- {% endfor %} -->
     </div>
     <footer class="main-footer">
         <div class="developer">

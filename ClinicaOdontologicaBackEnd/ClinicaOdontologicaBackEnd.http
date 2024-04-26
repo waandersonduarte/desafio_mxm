@@ -4,3 +4,12 @@ GET {{ClinicaOdontologicaBackEnd_HostAddress}}/pacientes
 Accept: application/json
 
 ###
+
+POST {{ClinicaOdontologicaBackEnd_HostAddress}}/dentistas
+Content-Type: application/json
+
+{
+    "nome": "Beatriz Duarte",
+    "crm": "beatriz.duarte@gmail.com",
+    "telefone": "89999175800"
+}

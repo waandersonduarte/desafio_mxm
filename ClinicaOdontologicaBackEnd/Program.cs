@@ -18,6 +18,16 @@ builder.Services.AddDbContext<ClinicaDbContext>(options => {
     options.UseLazyLoadingProxies().UseSqlite(defaultConnectionString);
 });
 
+builder.Services.AddCors(options =>
+    {
+        options.AddDefaultPolicy(builder =>
+        {
+            builder.WithOrigins("http://localhost:4200") // Permitir solicitações do frontend Angular
+                   .AllowAnyMethod()
+                   .AllowAnyHeader();
+        });
+    });
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -31,5 +41,6 @@ app.UseHttpsRedirection();
 
 app.MapControllers();
 
+app.UseCors();
 
 app.Run();
