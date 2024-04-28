@@ -36,12 +36,12 @@ A parte do Back-End foi desenvolvido com o `C#`, com o intuito de criar uma `API
 
 ![Swagger](ImagensProjeto/pagina_swagger.png)
 
->**imagens mostra a API em funcionamento com seus respectivos endpoints de Agenda contendo as funcionalidades do CRUD.**
+>**As imagens mostra a API em funcionamento com seus respectivos endpoints de Agenda contendo as funcionalidades do CRUD.**
 
-    1. GET: Endpoint para verificar as agendas cadastradas.**
-    2. POST: Endpoint para cadstro de uma nova Agenda.**
-    3. PUT: Endpoint para fazer a atualização de uma Agenda específica.**
-    4. DELETE: Endpoint para remover uma Agenda específica.**
+    1. GET: Endpoint para verificar as agendas cadastradas.
+    2. POST: Endpoint para cadstro de uma nova Agenda.
+    3. PUT: Endpoint para fazer a atualização de uma Agenda específica.
+    4. DELETE: Endpoint para remover uma Agenda específica.
 
 ## Verificação de Vulnerabilidades
 
