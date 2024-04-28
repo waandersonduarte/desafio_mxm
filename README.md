@@ -10,13 +10,9 @@ Utilizei um projeto de minha própria autoria que consiste em uma representaçã
 
 O sistema foi desenvolvido no **`Framework Angular`**, onde o usuário com a utilização do sistema terá um controle das Agendas e Consultas registradas previamente, além de ser possível fazer cadastro de Pacientes e Dentistas.
 
-- **Gerenciamento de Pacientes e Dentistas:**
+- **Gerenciamento de Pacientes e Dentistas:** Os funcionários da clínica poderão adicionar, editar e excluir informações dos pacientes e dentistas.
 
-    Os funcionários da clínica poderão adicionar, editar e excluir informações dos pacientes e dentistas.
-
-- **Registro de Agendas e Consultas**
-
-    OS funcionários poderão fazer cadastro de Agendas para um Dentista específico. E poderão marcar Consultas para os Pacientes escolhendo uma Agenda pré-cadastrada que melhor atender o Paciente.
+- **Registro de Agendas e Consultas:** Os funcionários poderão fazer cadastro de Agendas para um Dentista específico. E poderão marcar Consultas para os Pacientes escolhendo uma Agenda pré-cadastrada que melhor atender o Paciente.
 
 **`Framework Angular:`** Angular é um framework de desenvolvimento front-end mantido pelo Google e uma comunidade de desenvolvedores. Ele é usado para criar aplicativos web dinâmicos e responsivos. Angular utiliza a linguagem TypeScript, que é uma superconjunto de JavaScript, para desenvolver aplicações com uma arquitetura orientada a componentes.
 
