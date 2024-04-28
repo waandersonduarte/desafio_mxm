@@ -23,18 +23,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap" rel="stylesheet">
     <link rel="icon" href="{% static 'imagem/logo_titulo.ico' %}">
-    <title></title>
+    <title>Paciente | MXM Odontologia</title>
 </head>
 
 <body>
     <div class="main-content main-content-list container">
+        <h2>Pacientes</h2>
         <a routerLink="registrar/">
             <button class="botao-cadastrar"><i class="fa fa-plus"></i></button>
         </a>
         <div class="app app-list-item" *ngFor="let paciente of pacientes">
             <div class="app-data">
                 <div class="last-name">
-                    <h3>{{paciente.nome}}</h3>
+                    <h3>{{paciente.nome}} - ID: {{paciente.id}}</h3>
                 </div>
                 CPF: {{paciente.cpf}}<br>
                 Sexo: {{paciente.sexo}}<br>
@@ -65,7 +66,7 @@
         </div>
 
         <div class="powered">
-            <a href="https://www.djangoproject.com/" target="_blank" rel="noreferrer noopener">Powered by Django</a>
+            <a href="#" target="_blank" rel="noreferrer noopener">Powered by Angular</a>
         </div>
     </footer>
 </body>

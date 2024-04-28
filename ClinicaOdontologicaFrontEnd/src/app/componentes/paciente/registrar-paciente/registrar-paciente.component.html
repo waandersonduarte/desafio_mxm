@@ -47,7 +47,7 @@
                                 <input type="text" formControlName="sexo" class="form-control">
 
                                 <label for="">Data de Nascimento:</label>
-                                <input type="text" formControlName="dataNascimento" class="form-control">
+                                <input type="date" formControlName="dataNascimento" class="form-control">
 
                                 <label for="">Telefone:</label>
                                 <input type="text" formControlName="telefone" class="form-control">
@@ -60,17 +60,6 @@
                             <input type="submit" value="Enviar" class="botao" (click)="cadastrar()">
                         </div>
                     </form>
-                    <!-- <table>
-                        <tr *ngFor="let a of pacientes">
-                            <td>{{ a.nome }}</td>
-                            <td>{{ a.cpf }}</td>
-                            <td>{{ a.sexo }}</td>
-                            <td>{{ a.dataNascimento }}</td>
-                            <td>{{ a.telefone }}</td>
-                            <td>{{ a.endereco }}</td>
-                            <td><button (click)="remover(a.id || 0)">Remover</button></td>
-                        </tr>
-                    </table> -->
                 </div>
             </div>
         </div>

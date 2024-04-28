@@ -11,7 +11,7 @@ import { DentistaService } from '../../../servicos/dentista/dentista.service';
   templateUrl: './registrar-dentista.component.html',
   styleUrl: './registrar-dentista.component.css'
 })
-export class RegistrarDentistaComponent implements OnInit{
+export class RegistrarDentistaComponent{
 
   // Vetor de pacientes
   dentistas: Dentista[] = []

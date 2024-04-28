@@ -23,18 +23,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap" rel="stylesheet">
     <link rel="icon" href="{% static 'imagem/logo_titulo.ico' %}">
-    <title>{% block titulo %}{% endblock titulo %} | OrtoEndo</title>
+    <title></title>
 </head>
 
 <body>
     <div class="main-content main-content-list container">
+        <h2>Dentistas</h2>
         <a routerLink="registrar/">
             <button class="botao-cadastrar"><i class="fa fa-plus"></i></button>
         </a>
         <div class="app app-list-item" *ngFor="let dentista of dentistas">
             <div class="app-data">
                 <div class="last-name">
-                    <h3>{{dentista.nome}}</h3>
+                    <h3>{{dentista.nome}} - ID: {{dentista.id}}</h3>
                 </div>
                 CPF: {{dentista.crm}}<br>
                 Telefone: {{dentista.telefone}}<br>
@@ -62,7 +63,7 @@
         </div>
 
         <div class="powered">
-            <a href="https://www.djangoproject.com/" target="_blank" rel="noreferrer noopener">Powered by Django</a>
+            <a href="#" target="_blank" rel="noreferrer noopener">Powered by Angular</a>
         </div>
     </footer>
 </body>

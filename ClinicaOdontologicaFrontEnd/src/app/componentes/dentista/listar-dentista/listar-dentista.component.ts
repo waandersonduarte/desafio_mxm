@@ -21,11 +21,11 @@ export class ListarDentistaComponent {
     .subscribe(dados => this.dentistas = dados);
   }
 
-  // Método para remover pacientes
+  // Método para remover dentistas
   remover(id:number):void{
     this.servico.remover(id)
     .subscribe(r => {
-      // Encontrar a posição do paciente no vetor
+      // Encontrar a posição do dentista no vetor
       let posicaoDentista = this.dentistas.findIndex(obj => {return obj.id === id});
 
       // Remover do vetor

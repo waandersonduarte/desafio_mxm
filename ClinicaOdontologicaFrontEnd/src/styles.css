@@ -305,7 +305,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0;
+    padding: 5px;
     background-color: var(--color-primary);
     color: #fff;
     margin-bottom: 25px;
@@ -355,7 +355,7 @@ header {
     border: none;
     background-color: #fff;
     color: #000000;
-    padding: 12px;
+    padding: 10px;
     font-size: 1.5rem;
     border-radius: 5px;
     margin-right: 20px;
