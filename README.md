@@ -24,7 +24,7 @@ O sistema foi desenvolvido no **`Framework Angular`**, onde o usuário com a uti
 
 ![AngularFrontEnd](ImagensProjeto/pagina_paciente.png)
 
-```txt
+```
 As imagens acima demonstra o Front-End em execução trazendo as informações de Consultas e Pacientes da API, portanto, essas informações estão vindo API e a API está salvando essas informações em um banco de Dados chamado SQLite. 
 ```
 
