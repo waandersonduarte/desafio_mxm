@@ -24,9 +24,7 @@ O sistema foi desenvolvido no **`Framework Angular`**, onde o usuário com a uti
 
 ![AngularFrontEnd](ImagensProjeto/pagina_paciente.png)
 
-```
-As imagens acima demonstra o Front-End em execução trazendo as informações de Consultas e Pacientes da API, portanto, essas informações estão vindo API e a API está salvando essas informações em um banco de Dados chamado SQLite. 
-```
+>As imagens acima demonstra o Front-End em execução trazendo as informações de Consultas e Pacientes da API, portanto, essas informações estão vindo API e a API está salvando essas informações em um banco de Dados chamado SQLite.
 
 **`SQLite:`** SQLite é um sistema de gerenciamento de banco de dados relacional de código aberto, leve e autônomo, amplamente utilizado em aplicativos de software. Ele é incorporado diretamente nos aplicativos, eliminando a necessidade de um servidor de banco de dados separado. SQLite é rápido, eficiente e multiplataforma, sendo uma escolha popular para aplicativos móveis, navegadores da web e outros contextos onde um banco de dados leve é necessário.
 
